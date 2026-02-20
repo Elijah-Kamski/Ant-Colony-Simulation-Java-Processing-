@@ -1,5 +1,9 @@
 # 🐜 Ant Colony Simulation
 
+<p align="center">
+  <img src="assets/preview.png" alt="Ant Colony Simulation Preview" width="100%">
+</p>
+
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Java](https://img.shields.io/badge/Language-Java-orange.svg)](https://www.java.com/)
 [![Processing](https://img.shields.io/badge/Library-Processing-blue.svg)](https://processing.org/)
@@ -10,19 +14,17 @@ An interactive, multi-agent biological simulation built with **Java** and the **
 
 ## 🚀 Key Features
 
-* **🧠 Advanced AI Steering** Ants utilize *Reynolds' steering behaviors* to wander, seek food, and follow pheromone trails with organic, lifelike movement.
+* **🧠 Advanced AI Steering:** Ants utilize *Reynolds' steering behaviors* to wander, seek food, and follow pheromone trails with organic, lifelike movement.
   
-* **📡 Pheromone Grid System** A high-performance grid architecture managing 4 independent data channels (Home/Food for each colony).
+* **📡 Pheromone Grid System:** A high-performance grid architecture managing 4 independent data channels (Home/Food for each colony).
 
-* **🍎 Newtonian Physics** Environmental entities like falling leaves are governed by gravity, air drag, and wind for realistic interaction.
+* **🍎 Newtonian Physics:** Environmental entities like falling leaves are governed by gravity, air drag, and wind for realistic interaction.
 
-* **🌿 Procedural Generation**
+* **🌿 Procedural Generation:**
     * **Fractal Trees:** Recursive branching algorithms that ensure unique tree structures every run.
     * **Julia Set Roots:** Underground root systems generated via complex-plane fractal mathematics.
 
-* **🌍 Dynamic World Engine** A full 24-hour day/night cycle with sky color interpolation and seasonal changes that directly affect simulation parameters.
-
-
+* **🌍 Dynamic World Engine:** A full 24-hour day/night cycle with sky color interpolation and seasonal changes that directly affect simulation parameters.
 
 ---
 
@@ -57,21 +59,33 @@ The ecosystem is driven by a resource-management cycle that the user can acceler
 
 ---
 
+## 🔍 Research & Analysis Mode
+
+The simulation features a **Clean Pause State**, specifically designed for data interpretation:
+* **Static Observation:** When paused, the rendering engine remains active, allowing you to study pheromone density and ant distribution without visual overlays or darkening filters.
+* **Real-time Tweaking:** Adjust sliders during pause to prepare the next evolutionary scenario before resuming execution.
+* **Robust UI:** Implemented edge-detection logic for all buttons, ensuring each click triggers exactly one action.
+
+
+
+---
+
 ## 🛠️ How to Run
 
-1.  **Java:** Ensure you have **Java 8 or higher** installed.
-2.  **Dependencies:** Include the **Processing core library** (`core.jar`) in your project's classpath.
-3.  **Entry Point:** Run the **`Main`** class located inside the `setup` package.
+1. **Java:** Ensure you have **Java 8 or higher** installed.
+2. **Dependencies:** Include the **Processing core library** (`core.jar`) in your project's classpath.
+3. **Entry Point:** Run the **`Main`** class located inside the `setup` package.
 
-### 🎮 Controls
+### 🎮 Controls & Interaction
 
-* **🖱️ Mouse:** Interact with real-time UI sliders and the "Restart" button.
-* **⌨️ 'R' Key:** Trigger an immediate simulation reset.
+* **🖱️ Mouse UI:** Use the left sidebar to adjust simulation parameters in real-time.
+* **⏸️ Pause/Resume:** * Click the **"PAUSE SIMULATION"** button on the sidebar.
+    * Or press the **Spacebar** for a quick toggle.
+* **🔄 Restart:** * Click **"RESTART SIMULATION"** to reset the environment and populations.
+    * Or press the **'R' Key** for a hot-reload.
 
 ---
 
 ## 📜 License
 
 This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) file for the full text.
-
----
